@@ -1,0 +1,127 @@
+\documentclass[
+    a4paper, % Tamaño del papel, usar a4paper o letterpaper
+    10pt, % Tamaño de fuente predeterminado, también se puede usar 11pt o 12pt, aunque no se recomienda
+    unnumbered sections, % Comentarlo para habilitar la numeración de secciones
+    two side, % Modo tradicional de dos lados donde los encabezados y pies de página cambian entre páginas impares y pares, comentar esta opción para hacerlos fijos
+]{LTJournalArticle}
+
+\addbibresource{sample.bib} % Archivo de bibliografía BibLaTeX
+
+\runninghead{Shortened Running Article Title}
+
+\setcounter{page}{1} % Número de la primera página
+
+%----------------------------------------------------------------------------------------
+% TÍTULO DEL ARTÍCULO
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+\renewcommand{\maketitlehookd}{%
+    \begin{center}
+        \noindent Escuela de Ciencia de la Computación\\ Universidad                                Nacional de Ingeniería\\ Lima, Perú
+    \end{center}
+    \begin{abstract}
+El análisis de la información ha tendido a la visualización directa de los datos a través de gráficas y tablas que simplifiquen la comprensión de los valores y sus cualidades. Un avance innegable de las posibilidades para el estudio de objetos y fenómenos nos lleva al uso específico de las herramientas de las libreras NumPy, Pandas y Matplotlib, destinadas a Python como lenguaje de programación predilecto para la modificación y visualización de datos. El presente trabajo tiene como objetivo el tratamiento de una serie de datos, correspondientes a las características de un grupo de vehículos, y su representación gráfica; para determinar la influencia de ciertos parámetros en el rendimiento y la eficiencia del auto.
+\end{abstract}
+}
+
+\author{%
+        \IEEEauthorblockN{\\Torres Lopez\\Leandro Gabriel}%
+        \IEEEauthorblockA{\\leandro.torres.l@uni.pe}%
+        \and%
+        \IEEEauthorblockN{\\Huamán Guerra\\Diego Fernando}%
+        \IEEEauthorblockA{\\diego.huaman.g@uni.pe}%
+        \and%
+        \IEEEauthorblockN{\\Illesca Oscco\\Adrian Angelo}%
+        \IEEEauthorblockA{\\adrian.illesca.o@uni.pe}%
+}
+
+\title{Repercusión de las características técnicas de los automóviles en su eficiencia y rendimiento} 
+
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	CONTENIDO DEL ARTÍCULO
+%----------------------------------------------------------------------------------------
+
+\section{Introducción}
+
+La potencia y eficiencia de un automóvil recae en la suma de diversos parámetros que provienen directamente de los componentes utilizados en su fabricación, el posterior análisis se centra en el archivo 'mtcars.csv', el cual nos proporciona una serie de datos de treinta y dos automóviles, bajo las modificaciones del Dataframe (estructura de datos con dos dimensiones) principal se busca una visualización clara de los aspectos más influyentes en el rendimiento y la eficiencia. Es de importancia asumir que las especificaciones de los vehículos que están presentes en el archivo principal presentan sesgos mínimos y se controla el tiempo de uso del vehículo al momento de hacer las mediciones, entendido que este tiempo se acerca tanto como sea posible al momento de su fabricación, de este modo el análisis será pertinente para la finalidad propuesta.
+%------------------------------------------------
+
+\section{Fundamento Teórico}
+
+\subsection{Sample Sites \& Processing}
+
+This line shows how to use a footnote to further explain or cite text\footnote{Example footnote text.}.
+
+This is a bullet point list:
+
+\begin{itemize}
+    \item Arcu eros accumsan lorem, at posuere mi diam sit amet tortor
+    \item Fusce fermentum, mi sit amet euismod rutrum
+    \item Sem lorem molestie diam, iaculis aliquet sapien tortor non nisi
+    \item Pellentesque bibendum pretium aliquet
+\end{itemize}
+
+Mauris interdum porttitor fringilla. Proin tincidunt sodales leo at ornare. Donec tempus magna non mauris gravida luctus. Cras vitae arcu vitae mauris eleifend scelerisque. Nam sem sapien, vulputate nec felis eu, blandit convallis risus. Pellentesque sollicitudin venenatis tincidunt. In et ipsum libero. Nullam tempor ligula a massa convallis pellentesque.
+
+This is a numbered list:
+
+\begin{enumerate}
+    \item Donec dolor arcu, rutrum id molestie in, viverra sed diam
+    \item Curabitur feugiat
+    \item Turpis sed auctor facilisis
+\end{enumerate}
+
+\subsection{Species Identification}
+
+Proin lobortis efficitur dictum. Pellentesque vitae pharetra eros, quis dignissim magna. Sed tellus leo, semper non vestibulum vel, tincidunt eu mi. Aenean pretium ut velit sed facilisis. Ut placerat urna facilisis dolor suscipit vehicula. Ut ut auctor nunc. Nulla non massa eros. Proin rhoncus arcu odio, eu lobortis metus sollicitudin eu. Duis maximus ex dui, id bibendum diam dignissim id. Aliquam quis lorem lorem. Phasellus sagittis aliquet dolor, vulputate cursus dolor convallis vel. Suspendisse eu tellus feugiat, bibendum lectus quis, fermentum nunc. Nunc euismod condimentum magna nec bibendum. Curabitur elementum nibh eu sem cursus, eu aliquam leo rutrum. Sed bibendum augue sit amet pharetra ullamcorper. Aenean congue sit amet tortor vitae feugiat.
+
+Mauris interdum porttitor fringilla. Proin tincidunt sodales leo at ornare. Donec tempus magna non mauris gravida luctus. Cras vitae arcu vitae mauris eleifend scelerisque. Nam sem sapien, vulputate nec felis eu, blandit convallis risus. Pellentesque sollicitudin venenatis tincidunt. In et ipsum libero. Nullam tempor ligula a massa convallis pellentesque.
+
+\subsection{Data Analysis}
+
+Vestibulum sodales orci a nisi interdum tristique. In dictum vehicula dui, sed fermentum massa suscipit sed. Curabitur tincidunt orci risus, quis viverra dolor efficitur non. Sed et justo sit amet nisl suscipit ullamcorper. Suspendisse potenti. Donec vel est sapien. Suspendisse fringilla gravida nunc ut tincidunt. Nullam elementum ligula justo, eu vulputate sapien pretium vitae. Cras efficitur arcu mi, eu sagittis erat vehicula et. Aliquam gravida odio vel justo efficitur lacinia. Mauris semper justo eu ligula luctus consectetur.
+
+Aliquam faucibus eu orci at dictum. Nunc suscipit dolor ac arcu placerat ornare. Donec feugiat venenatis ipsum, sit amet sodales est efficitur ut. Sed pretium, magna a iaculis ultricies, mauris metus iaculis ex, at pharetra dolor risus a libero. Duis venenatis bibendum accumsan. Curabitur elementum erat at nibh volutpat rhoncus. Aliquam consectetur mi sit amet tortor convallis, in pretium nunc blandit. Nulla aliquet, turpis ac accumsan molestie, sapien libero gravida mauris, nec lacinia erat mi ac libero. Proin fermentum malesuada tincidunt. Pellentesque sit amet tincidunt augue. Nunc sed maximus libero. Ut vitae felis lectus. Quisque feugiat augue vel risus convallis cursus. Ut sed rutrum urna. Vestibulum congue dui eros, quis eleifend nunc pharetra nec.
+
+%------------------------------------------------
+
+\section{Desarrollo}
+
+Donec efficitur pretium erat nec bibendum. Vestibulum venenatis commodo egestas. Pellentesque nec faucibus diam. Suspendisse a felis purus. Fusce suscipit condimentum mauris, a pulvinar metus viverra at. Pellentesque sagittis orci ac vehicula ultrices. Aliquam sodales, turpis id faucibus dignissim, leo magna tempus eros, ac auctor mi sem vitae turpis. Quisque placerat ex id mauris auctor, ac hendrerit odio sodales.
+
+Phasellus euismod mauris quis lacus vulputate, non tempor nulla rhoncus. Integer et ultricies augue. Nunc porta libero sit amet massa iaculis, et congue justo consectetur. Curabitur et augue vel lorem blandit eleifend eget sit amet augue. Pellentesque dictum sed diam sed scelerisque. Curabitur finibus quis ex vel maximus. Nullam sit amet tempus odio. Sed tincidunt mi sed congue pharetra. Phasellus ultricies fringilla diam, nec aliquam arcu mattis in. Vivamus elementum fringilla nisi, non dictum enim sodales a. Fusce et tellus eget odio facilisis facilisis id id mauris. Donec sagittis ligula ut rhoncus consequat. Nulla facilisi. Aenean vitae orci euismod, tincidunt lacus sit amet, volutpat velit. Donec ac elementum sapien, id volutpat ex. Nam vulputate viverra risus, ut vulputate ante placerat nec.
+
+Curabitur gravida eros sed libero scelerisque consectetur. Donec consectetur feugiat efficitur. Mauris molestie vehicula ligula ac posuere. Cras quis turpis tincidunt, vestibulum sapien et, vestibulum tortor. Phasellus quis leo felis. Nulla consectetur vulputate nulla, vel gravida turpis tempus non. Nam consequat tristique erat id ornare. Nam vulputate nulla a risus viverra dignissim. In ullamcorper tincidunt est, in dictum odio volutpat vitae. Integer ultricies libero vel magna ullamcorper, id dictum purus dictum. Proin iaculis nibh quam, sit amet scelerisque justo aliquet sit amet. Pellentesque iaculis leo libero, sit amet elementum elit lacinia vel. Nullam ullamcorper metus sit amet mi tincidunt, a dapibus velit dapibus. Phasellus ut mollis purus. Nam efficitur ipsum at purus iaculis facilisis.
+
+\begin{equation}
+    \frac{d}{dx}\left( a x^2 + b x + c \right) = 2ax + b
+    \label{eq:example2}
+\end{equation}
+
+Automatically referencing an equation number using its label: Equation \ref{eq:example2}.
+
+Vestibulum sodales orci a nisi interdum tristique. In dictum vehicula dui, sed fermentum massa suscipit sed. Curabitur tincidunt orci risus, quis viverra dolor efficitur non. Sed et justo sit amet nisl suscipit ullamcorper. Suspendisse potenti. Donec vel est sapien. Suspendisse fringilla gravida nunc ut tincidunt. Nullam elementum ligula justo, eu vulputate sapien pretium vitae. Cras efficitur arcu mi, eu sagittis erat vehicula et. Aliquam gravida odio vel justo efficitur lacinia. Mauris semper justo eu ligula luctus consectetur.
+
+Aliquam faucibus eu orci at dictum. Nunc suscipit dolor ac arcu placerat ornare. Donec feugiat venenatis ipsum, sit amet sodales est efficitur ut. Sed pretium, magna a iaculis ultricies, mauris metus iaculis ex, at pharetra dolor risus a libero. Duis venenatis bibendum accumsan. Curabitur elementum erat at nibh volutpat rhoncus. Aliquam consectetur mi sit amet tortor convallis, in pretium nunc blandit. Nulla aliquet, turpis ac accumsan molestie, sapien libero gravida mauris, nec lacinia erat mi ac libero. Proin fermentum malesuada tincidunt. Pellentesque sit amet tincidunt augue. Nunc sed maximus libero. Ut vitae felis lectus. Quisque feugiat augue vel risus convallis cursus. Ut sed rutrum urna. Vestibulum congue dui eros, quis eleifend nunc pharetra nec.
+
+%------------------------------------------------
+
+
+\section{Conclusión}
+
+Vestibulum sodales orci a nisi interdum tristique. In dictum vehicula dui, sed fermentum massa suscipit sed. Curabitur tincidunt orci risus, quis viverra dolor efficitur non. Sed et justo sit amet nisl suscipit ullamcorper. Suspendisse potenti. Donec vel est sapien. Suspendisse fringilla gravida nunc ut tincidunt. Nullam elementum ligula justo, eu vulputate sapien pretium vitae. Cras efficitur arcu mi, eu sagittis erat vehicula et. Aliquam gravida odio vel justo efficitur lacinia. Mauris semper justo eu ligula luctus consectetur.
+
+Donec efficitur pretium erat nec bibendum. Vestibulum venenatis commodo egestas. Pellentesque nec faucibus diam. Suspendisse a felis purus. Fusce suscipit condimentum mauris, a pulvinar metus viverra at. Pellentesque sagittis orci ac vehicula ultrices. Aliquam sodales, turpis id faucibus dignissim, leo magna tempus eros, ac auctor mi sem vitae turpis. Quisque placerat ex id mauris auctor, ac hendrerit odio sodales.
+
+Phasellus euismod mauris quis lacus vulputate, non tempor nulla rhoncus. Integer et ultricies augue. Nunc porta libero sit amet massa iaculis, et congue justo consectetur. Curabitur et augue vel lorem blandit eleifend eget sit amet augue. Pellentesque dictum sed diam sed scelerisque. Curabitur finibus quis ex vel maximus. Nullam sit amet tempus odio. Sed tincidunt mi sed congue pharetra. Phasellus ultricies fringilla diam, nec aliquam arcu mattis in. Vivamus elementum fringilla nisi, non dictum enim sodales a. Fusce et tellus eget odio facilisis facilisis id id mauris. Donec sagittis ligula ut rhoncus consequat. Nulla facilisi. Aenean vitae orci euismod, tincidunt lacus sit amet, volutpat velit. Donec ac elementum sapien, id volutpat ex. Nam.
+%----------------------------------------------------------------------------------------
+%	REFERENCIAS
+%----------------------------------------------------------------------------------------
+{Referencias}
+\printbibliography % Output the bibliography section
+
+\end{document}
